@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  EntryViewController.h
 //  Diary
 //
 //  Created by Carl Udren on 1/4/16.
@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class DiaryEntry;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface EntryViewController : UIViewController
 
-
+@property(nonatomic, strong) DiaryEntry *entry;
 
 @end
-

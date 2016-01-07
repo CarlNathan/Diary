@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		ED2BBB601C3B45CC00170524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB5F1C3B45CC00170524 /* main.m */; };
 		ED2BBB631C3B45CC00170524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB621C3B45CC00170524 /* AppDelegate.m */; };
-		ED2BBB661C3B45CC00170524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB651C3B45CC00170524 /* ViewController.m */; };
 		ED2BBB691C3B45CC00170524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2BBB671C3B45CC00170524 /* Main.storyboard */; };
 		ED2BBB6C1C3B45CC00170524 /* Diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB6A1C3B45CC00170524 /* Diary.xcdatamodeld */; };
 		ED2BBB6E1C3B45CD00170524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2BBB6D1C3B45CD00170524 /* Assets.xcassets */; };
 		ED2BBB711C3B45CD00170524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2BBB6F1C3B45CD00170524 /* LaunchScreen.storyboard */; };
 		ED2BBB7C1C3B45CD00170524 /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB7B1C3B45CD00170524 /* DiaryTests.m */; };
 		ED2BBB871C3B45CD00170524 /* DiaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB861C3B45CD00170524 /* DiaryUITests.m */; };
+		ED2BBB961C3B4B7F00170524 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB951C3B4B7F00170524 /* CoreDataStack.m */; };
+		ED2BBB9B1C3B51A600170524 /* DiaryEntry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB981C3B51A600170524 /* DiaryEntry+CoreDataProperties.m */; };
+		ED2BBB9C1C3B51A600170524 /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB9A1C3B51A600170524 /* DiaryEntry.m */; };
+		ED2BBB9F1C3B5EB500170524 /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2BBB9E1C3B5EB500170524 /* EntryViewController.m */; };
+		ED4103261C3C950100B2AA9F /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4103251C3C950100B2AA9F /* EntryListTableViewController.m */; };
+		ED4103291C3D808700B2AA9F /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4103281C3D808700B2AA9F /* NavigationViewController.m */; };
+		ED41032C1C3D8A4E00B2AA9F /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41032B1C3D8A4E00B2AA9F /* EntryCell.m */; };
+		ED41032E1C3DD4DA00B2AA9F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED41032D1C3DD4DA00B2AA9F /* QuartzCore.framework */; };
+		ED4103301C3DD74300B2AA9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED41032F1C3DD74300B2AA9F /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +48,6 @@
 		ED2BBB5F1C3B45CC00170524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED2BBB611C3B45CC00170524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED2BBB621C3B45CC00170524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED2BBB641C3B45CC00170524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ED2BBB651C3B45CC00170524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ED2BBB681C3B45CC00170524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED2BBB6B1C3B45CC00170524 /* Diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diary.xcdatamodel; sourceTree = "<group>"; };
 		ED2BBB6D1C3B45CD00170524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +59,22 @@
 		ED2BBB821C3B45CD00170524 /* DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2BBB861C3B45CD00170524 /* DiaryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryUITests.m; sourceTree = "<group>"; };
 		ED2BBB881C3B45CD00170524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2BBB941C3B4B7F00170524 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		ED2BBB951C3B4B7F00170524 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		ED2BBB971C3B51A600170524 /* DiaryEntry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiaryEntry+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		ED2BBB981C3B51A600170524 /* DiaryEntry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiaryEntry+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
+		ED2BBB991C3B51A600170524 /* DiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryEntry.h; sourceTree = SOURCE_ROOT; };
+		ED2BBB9A1C3B51A600170524 /* DiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryEntry.m; sourceTree = SOURCE_ROOT; };
+		ED2BBB9D1C3B5EB500170524 /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryViewController.h; sourceTree = "<group>"; };
+		ED2BBB9E1C3B5EB500170524 /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryViewController.m; sourceTree = "<group>"; };
+		ED4103241C3C950100B2AA9F /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryListTableViewController.h; path = ../EntryListTableViewController.h; sourceTree = "<group>"; };
+		ED4103251C3C950100B2AA9F /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryListTableViewController.m; path = ../EntryListTableViewController.m; sourceTree = "<group>"; };
+		ED4103271C3D808700B2AA9F /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationViewController.h; path = ../NavigationViewController.h; sourceTree = "<group>"; };
+		ED4103281C3D808700B2AA9F /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationViewController.m; path = ../NavigationViewController.m; sourceTree = "<group>"; };
+		ED41032A1C3D8A4E00B2AA9F /* EntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryCell.h; path = ../EntryCell.h; sourceTree = "<group>"; };
+		ED41032B1C3D8A4E00B2AA9F /* EntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryCell.m; path = ../EntryCell.m; sourceTree = "<group>"; };
+		ED41032D1C3DD4DA00B2AA9F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ED41032F1C3DD74300B2AA9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4103301C3DD74300B2AA9F /* CoreLocation.framework in Frameworks */,
+				ED41032E1C3DD4DA00B2AA9F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +107,8 @@
 		ED2BBB521C3B45CC00170524 = {
 			isa = PBXGroup;
 			children = (
+				ED41032F1C3DD74300B2AA9F /* CoreLocation.framework */,
+				ED41032D1C3DD4DA00B2AA9F /* QuartzCore.framework */,
 				ED2BBB5D1C3B45CC00170524 /* Diary */,
 				ED2BBB7A1C3B45CD00170524 /* DiaryTests */,
 				ED2BBB851C3B45CD00170524 /* DiaryUITests */,
@@ -103,10 +129,22 @@
 		ED2BBB5D1C3B45CC00170524 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				ED41032A1C3D8A4E00B2AA9F /* EntryCell.h */,
+				ED41032B1C3D8A4E00B2AA9F /* EntryCell.m */,
+				ED2BBB971C3B51A600170524 /* DiaryEntry+CoreDataProperties.h */,
+				ED2BBB981C3B51A600170524 /* DiaryEntry+CoreDataProperties.m */,
+				ED2BBB991C3B51A600170524 /* DiaryEntry.h */,
+				ED2BBB9A1C3B51A600170524 /* DiaryEntry.m */,
+				ED4103241C3C950100B2AA9F /* EntryListTableViewController.h */,
+				ED4103251C3C950100B2AA9F /* EntryListTableViewController.m */,
+				ED2BBB941C3B4B7F00170524 /* CoreDataStack.h */,
+				ED2BBB951C3B4B7F00170524 /* CoreDataStack.m */,
 				ED2BBB611C3B45CC00170524 /* AppDelegate.h */,
 				ED2BBB621C3B45CC00170524 /* AppDelegate.m */,
-				ED2BBB641C3B45CC00170524 /* ViewController.h */,
-				ED2BBB651C3B45CC00170524 /* ViewController.m */,
+				ED2BBB9D1C3B5EB500170524 /* EntryViewController.h */,
+				ED2BBB9E1C3B5EB500170524 /* EntryViewController.m */,
+				ED4103271C3D808700B2AA9F /* NavigationViewController.h */,
+				ED4103281C3D808700B2AA9F /* NavigationViewController.m */,
 				ED2BBB671C3B45CC00170524 /* Main.storyboard */,
 				ED2BBB6D1C3B45CD00170524 /* Assets.xcassets */,
 				ED2BBB6F1C3B45CD00170524 /* LaunchScreen.storyboard */,
@@ -273,10 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2BBB661C3B45CC00170524 /* ViewController.m in Sources */,
+				ED2BBB9C1C3B51A600170524 /* DiaryEntry.m in Sources */,
+				ED2BBB961C3B4B7F00170524 /* CoreDataStack.m in Sources */,
+				ED4103291C3D808700B2AA9F /* NavigationViewController.m in Sources */,
 				ED2BBB631C3B45CC00170524 /* AppDelegate.m in Sources */,
+				ED4103261C3C950100B2AA9F /* EntryListTableViewController.m in Sources */,
 				ED2BBB601C3B45CC00170524 /* main.m in Sources */,
+				ED2BBB9B1C3B51A600170524 /* DiaryEntry+CoreDataProperties.m in Sources */,
+				ED2BBB9F1C3B5EB500170524 /* EntryViewController.m in Sources */,
 				ED2BBB6C1C3B45CC00170524 /* Diary.xcdatamodeld in Sources */,
+				ED41032C1C3D8A4E00B2AA9F /* EntryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +544,7 @@
 				ED2BBB8D1C3B45CD00170524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED2BBB8E1C3B45CD00170524 /* Build configuration list for PBXNativeTarget "DiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +553,7 @@
 				ED2BBB901C3B45CD00170524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED2BBB911C3B45CD00170524 /* Build configuration list for PBXNativeTarget "DiaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +562,7 @@
 				ED2BBB931C3B45CD00170524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
